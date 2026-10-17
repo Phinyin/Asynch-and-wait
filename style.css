@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+main{
+     width: 2000px;
+    height: 700px; 
+    /* min-height: 500px; */
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.item-div{
+    width: 200px;
+    height: fit-content;
+    min-height: 150px;
+    background-color: rgba(227, 222, 222, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.557);
+
+}
+
+.item-div img{
+    width: 200px;
+}
+
+.bottom-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.price-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.single-product{
+    width: 90%;
+    max-width: 800px;
+    /* border: solid; */
+ height: 400px;
+    min-height: 400px; 
+     background-color: rgba(227, 222, 222, 0.6); 
+    border-radius: 10px; 
+    padding: 25px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 50px auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.557); 
+}
+
+.single-product img{
+    width: 250px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.details-div{
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.details-div button{
+  padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+background-color: green !important;
+color: aliceblue;
+}
+
+
+.single-product button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+}
+.back-btn{
+    padding: 10px;
+    background-color: grey;
+    border: solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .single-product{
+        flex-direction: column;
+    }
+
+    .details-div{
+        width: 100%;
+    }
+}
